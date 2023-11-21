@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/hello/termProject.xst" -ofn "/home/ise/Desktop/hello/termProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc termProject.ucf -p xc6slx45-fgg484-3 termProject.ngc termProject.ngd  
+map -intstyle ise -p xc6slx45-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o termProject_map.ncd termProject.ngd termProject.pcf 
+par -w -intstyle ise -ol high -mt off termProject_map.ncd termProject.ncd termProject.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml termProject.twx termProject.ncd -o termProject.twr termProject.pcf -ucf termProject.ucf 
+bitgen -intstyle ise -f termProject.ut termProject.ncd 

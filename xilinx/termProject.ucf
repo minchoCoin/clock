@@ -1,0 +1,34 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "seg[0]" LOC = E6;
+NET "seg[1]" LOC = E5;
+NET "seg[2]" LOC = D5;
+NET "seg[3]" LOC = D6;
+NET "seg[4]" LOC = J6;
+NET "seg[5]" LOC = H8;
+NET "seg[6]" LOC = H6;
+NET "alr_hour" LOC = N3;
+NET "alr_min" LOC = N1;
+NET "alr_stop" LOC = K3;
+
+NET "clk" IOSTANDARD = LVCMOS25;
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+
+NET "clk" LOC = AB16;
+NET "COM1" LOC = G7;
+NET "COM2" LOC = G6;
+NET "COM3" LOC = F7;
+NET "COM4" LOC = F5;
+NET "COM5" LOC = K7;
+NET "COM6" LOC = K6;
+NET "COM7" LOC = K5;
+NET "COM8" LOC = J7;
+NET "hour_up" LOC = K2;
+NET "min_up" LOC = M3;
+NET "piezo" LOC = W15;
+NET "rst" LOC = L4;
+NET "sec_rst" LOC = M1;
+NET "switch" LOC = L1;

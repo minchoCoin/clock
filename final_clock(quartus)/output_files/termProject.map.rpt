@@ -1,0 +1,464 @@
+Analysis & Synthesis report for termProject
+Thu Dec 08 20:23:23 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: PNU_CLK_DIV:inst11
+ 12. Parameter Settings for User Entity Instance: PNU_CLK_DIV:inst12
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Dec 08 20:23:23 2022       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; termProject                                 ;
+; Top-level Entity Name           ; termProject                                 ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 101                                         ;
+; Total pins                      ; 25                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; termProject        ; termProject        ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; b2seg_bus.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/b2seg_bus.bdf              ;         ;
+; counter_10.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/counter_10.bdf             ;         ;
+; termProject.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/termProject.bdf            ;         ;
+; mx_2x1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/mx_2x1.bdf                 ;         ;
+; mx_4bit_2x1.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/mx_4bit_2x1.bdf            ;         ;
+; trigger.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/trigger.bdf                ;         ;
+; count_6.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/count_6.bdf                ;         ;
+; count_60.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/count_60.bdf               ;         ;
+; count_2.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/count_2.bdf                ;         ;
+; count_3.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/count_3.bdf                ;         ;
+; count_24.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/count_24.bdf               ;         ;
+; isSame_1bit.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/isSame_1bit.bdf            ;         ;
+; four_bit_equal.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/four_bit_equal.bdf         ;         ;
+; six_row_segment.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/six_row_segment.bdf        ;         ;
+; switch_six_row_segment.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/switch_six_row_segment.bdf ;         ;
+; pnu_clk_div.v                    ; yes             ; Auto-Found Verilog HDL File        ; C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/pnu_clk_div.v              ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 86        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 147       ;
+;     -- 7 input functions                    ; 2         ;
+;     -- 6 input functions                    ; 20        ;
+;     -- 5 input functions                    ; 11        ;
+;     -- 4 input functions                    ; 21        ;
+;     -- <=3 input functions                  ; 93        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 101       ;
+;                                             ;           ;
+; I/O pins                                    ; 25        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 84        ;
+; Total fan-out                               ; 869       ;
+; Average fan-out                             ; 2.92      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Entity Name            ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------+------------------------+--------------+
+; |termProject                       ; 147 (5)             ; 101 (2)                   ; 0                 ; 0          ; 25   ; 0            ; |termProject                                                                       ; termProject            ; work         ;
+;    |PNU_CLK_DIV:inst11|            ; 36 (36)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |termProject|PNU_CLK_DIV:inst11                                                    ; PNU_CLK_DIV            ; work         ;
+;    |PNU_CLK_DIV:inst12|            ; 29 (29)             ; 21 (21)                   ; 0                 ; 0          ; 0    ; 0            ; |termProject|PNU_CLK_DIV:inst12                                                    ; PNU_CLK_DIV            ; work         ;
+;    |b2seg_bus:inst17|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|b2seg_bus:inst17                                                      ; b2seg_bus              ; work         ;
+;    |count_24:inst2|                ; 9 (3)               ; 7 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_24:inst2                                                        ; count_24               ; work         ;
+;       |count_3:inst|               ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_24:inst2|count_3:inst                                           ; count_3                ; work         ;
+;       |counter_10:inst1|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_24:inst2|counter_10:inst1                                       ; counter_10             ; work         ;
+;    |count_24:inst3|                ; 9 (3)               ; 7 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_24:inst3                                                        ; count_24               ; work         ;
+;       |count_3:inst|               ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_24:inst3|count_3:inst                                           ; count_3                ; work         ;
+;       |counter_10:inst1|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_24:inst3|counter_10:inst1                                       ; counter_10             ; work         ;
+;    |count_2:inst37|                ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_2:inst37                                                        ; count_2                ; work         ;
+;    |count_60:inst1|                ; 8 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst1                                                        ; count_60               ; work         ;
+;       |count_6:inst|               ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst1|count_6:inst                                           ; count_6                ; work         ;
+;       |counter_10:inst2|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst1|counter_10:inst2                                       ; counter_10             ; work         ;
+;    |count_60:inst4|                ; 8 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst4                                                        ; count_60               ; work         ;
+;       |count_6:inst|               ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst4|count_6:inst                                           ; count_6                ; work         ;
+;       |counter_10:inst2|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst4|counter_10:inst2                                       ; counter_10             ; work         ;
+;    |count_60:inst|                 ; 8 (1)               ; 8 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst                                                         ; count_60               ; work         ;
+;       |count_6:inst|               ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst|count_6:inst                                            ; count_6                ; work         ;
+;       |counter_10:inst2|           ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|count_60:inst|counter_10:inst2                                        ; counter_10             ; work         ;
+;    |switch_six_row_segment:inst15| ; 23 (0)              ; 4 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|switch_six_row_segment:inst15                                         ; switch_six_row_segment ; work         ;
+;       |count_2:inst2|              ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|switch_six_row_segment:inst15|count_2:inst2                           ; count_2                ; work         ;
+;       |mx_4bit_2x1:inst3|          ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|switch_six_row_segment:inst15|mx_4bit_2x1:inst3                       ; mx_4bit_2x1            ; work         ;
+;       |six_row_segment:inst1|      ; 11 (6)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|switch_six_row_segment:inst15|six_row_segment:inst1                   ; six_row_segment        ; work         ;
+;          |count_6:inst|            ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|switch_six_row_segment:inst15|six_row_segment:inst1|count_6:inst      ; count_6                ; work         ;
+;          |mx_4bit_2x1:inst5|       ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|switch_six_row_segment:inst15|six_row_segment:inst1|mx_4bit_2x1:inst5 ; mx_4bit_2x1            ; work         ;
+;    |trigger:inst13|                ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst13                                                        ; trigger                ; work         ;
+;    |trigger:inst16|                ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst16                                                        ; trigger                ; work         ;
+;    |trigger:inst44|                ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst44                                                        ; trigger                ; work         ;
+;    |trigger:inst45|                ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst45                                                        ; trigger                ; work         ;
+;    |trigger:inst46|                ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst46                                                        ; trigger                ; work         ;
+;    |trigger:inst47|                ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst47                                                        ; trigger                ; work         ;
+;    |trigger:inst48|                ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |termProject|trigger:inst48                                                        ; trigger                ; work         ;
++------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                         ;
++-----------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; Register name                                                         ; Reason for Removal                                                                 ;
++-----------------------------------------------------------------------+------------------------------------------------------------------------------------+
+; switch_six_row_segment:inst15|six_row_segment:inst|count_6:inst|inst  ; Merged with switch_six_row_segment:inst15|six_row_segment:inst1|count_6:inst|inst  ;
+; switch_six_row_segment:inst15|six_row_segment:inst|count_6:inst|inst1 ; Merged with switch_six_row_segment:inst15|six_row_segment:inst1|count_6:inst|inst1 ;
+; switch_six_row_segment:inst15|six_row_segment:inst|count_6:inst|inst2 ; Merged with switch_six_row_segment:inst15|six_row_segment:inst1|count_6:inst|inst2 ;
+; Total Number of Removed Registers = 3                                 ;                                                                                    ;
++-----------------------------------------------------------------------+------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 101   ;
+; Number of registers using Synchronous Clear  ; 42    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 101   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+; 3:1                ; 20 bits   ; 40 LEs        ; 0 LEs                ; 40 LEs                 ; Yes        ; |termProject|PNU_CLK_DIV:inst11|cnt[2]                                                    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |termProject|switch_six_row_segment:inst15|six_row_segment:inst1|mx_4bit_2x1:inst5|inst10 ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |termProject|switch_six_row_segment:inst15|mx_4bit_2x1:inst3|inst10                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PNU_CLK_DIV:inst11 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; cnt_num        ; 3822  ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: PNU_CLK_DIV:inst12 ;
++----------------+---------+--------------------------------------+
+; Parameter Name ; Value   ; Type                                 ;
++----------------+---------+--------------------------------------+
+; cnt_num        ; 1000000 ; Signed Integer                       ;
++----------------+---------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 101                         ;
+;     CLR               ; 59                          ;
+;     CLR SCLR          ; 42                          ;
+; arriav_lcell_comb     ; 154                         ;
+;     arith             ; 40                          ;
+;         1 data inputs ; 40                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 112                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 21                          ;
+;         5 data inputs ; 11                          ;
+;         6 data inputs ; 20                          ;
+; boundary_port         ; 25                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.04                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Dec 08 20:23:04 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off termProject -c termProject
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file b2seg_bus.bdf
+    Info (12023): Found entity 1: b2seg_bus
+Info (12021): Found 1 design units, including 1 entities, in source file counter_10.bdf
+    Info (12023): Found entity 1: counter_10
+Info (12021): Found 1 design units, including 1 entities, in source file termproject.bdf
+    Info (12023): Found entity 1: termProject
+Info (12021): Found 1 design units, including 1 entities, in source file d2b.bdf
+    Info (12023): Found entity 1: d2b
+Info (12021): Found 1 design units, including 1 entities, in source file four_bit_reg_ce.bdf
+    Info (12023): Found entity 1: four_bit_reg_ce
+Info (12021): Found 1 design units, including 1 entities, in source file mx_2x1.bdf
+    Info (12023): Found entity 1: mx_2x1
+Info (12021): Found 1 design units, including 1 entities, in source file mx_4bit_2x1.bdf
+    Info (12023): Found entity 1: mx_4bit_2x1
+Info (12021): Found 1 design units, including 1 entities, in source file trigger.bdf
+    Info (12023): Found entity 1: trigger
+Info (12021): Found 1 design units, including 1 entities, in source file count_6.bdf
+    Info (12023): Found entity 1: count_6
+Info (12021): Found 1 design units, including 1 entities, in source file count_4.bdf
+    Info (12023): Found entity 1: count_4
+Info (12021): Found 1 design units, including 1 entities, in source file count_60.bdf
+    Info (12023): Found entity 1: count_60
+Info (12021): Found 1 design units, including 1 entities, in source file count_2.bdf
+    Info (12023): Found entity 1: count_2
+Info (12021): Found 1 design units, including 1 entities, in source file count_3.bdf
+    Info (12023): Found entity 1: count_3
+Info (12021): Found 1 design units, including 1 entities, in source file count_24.bdf
+    Info (12023): Found entity 1: count_24
+Info (12021): Found 1 design units, including 1 entities, in source file issame_1bit.bdf
+    Info (12023): Found entity 1: isSame_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file four_bit_equal.bdf
+    Info (12023): Found entity 1: four_bit_equal
+Info (12021): Found 1 design units, including 1 entities, in source file count_7.bdf
+    Info (12023): Found entity 1: count_7
+Info (12021): Found 1 design units, including 1 entities, in source file counter_100.bdf
+    Info (12023): Found entity 1: counter_100
+Info (12021): Found 1 design units, including 1 entities, in source file count_1000000.bdf
+    Info (12023): Found entity 1: count_1000000
+Info (12021): Found 1 design units, including 1 entities, in source file count_1000.bdf
+    Info (12023): Found entity 1: count_1000
+Info (12021): Found 1 design units, including 1 entities, in source file week.bdf
+    Info (12023): Found entity 1: week
+Info (12021): Found 1 design units, including 1 entities, in source file six_row_segment.bdf
+    Info (12023): Found entity 1: six_row_segment
+Info (12021): Found 1 design units, including 1 entities, in source file switch_six_row_segment.bdf
+    Info (12023): Found entity 1: switch_six_row_segment
+Info (12127): Elaborating entity "termProject" for the top level hierarchy
+Warning (275011): Block or symbol "trigger" of instance "inst47" overlaps another block or symbol
+Warning (275011): Block or symbol "GND" of instance "inst53" overlaps another block or symbol
+Warning (275011): Block or symbol "GND" of instance "inst55" overlaps another block or symbol
+Warning (12125): Using design file pnu_clk_div.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: PNU_CLK_DIV File: C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/pnu_clk_div.v Line: 1
+Info (12128): Elaborating entity "PNU_CLK_DIV" for hierarchy "PNU_CLK_DIV:inst11"
+Warning (10230): Verilog HDL assignment warning at pnu_clk_div.v(26): truncated value with size 32 to match size of target (20) File: C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/pnu_clk_div.v Line: 26
+Info (12128): Elaborating entity "four_bit_equal" for hierarchy "four_bit_equal:inst5"
+Info (12128): Elaborating entity "isSame_1bit" for hierarchy "four_bit_equal:inst5|isSame_1bit:inst"
+Info (12128): Elaborating entity "count_60" for hierarchy "count_60:inst1"
+Info (12128): Elaborating entity "counter_10" for hierarchy "count_60:inst1|counter_10:inst2"
+Info (12128): Elaborating entity "count_6" for hierarchy "count_60:inst1|count_6:inst"
+Info (12128): Elaborating entity "trigger" for hierarchy "trigger:inst45"
+Info (12128): Elaborating entity "PNU_CLK_DIV" for hierarchy "PNU_CLK_DIV:inst12"
+Warning (10230): Verilog HDL assignment warning at pnu_clk_div.v(26): truncated value with size 32 to match size of target (20) File: C:/Users/user/Downloads/termprj2-20221208T084922Z-001/termprj2/asdf/pnu_clk_div.v Line: 26
+Info (12128): Elaborating entity "count_24" for hierarchy "count_24:inst2"
+Warning (275011): Block or symbol "NOT" of instance "inst18" overlaps another block or symbol
+Info (12128): Elaborating entity "count_3" for hierarchy "count_24:inst2|count_3:inst"
+Info (12128): Elaborating entity "count_2" for hierarchy "count_2:inst37"
+Info (12128): Elaborating entity "switch_six_row_segment" for hierarchy "switch_six_row_segment:inst15"
+Warning (275011): Block or symbol "mx_2x1" of instance "inst5" overlaps another block or symbol
+Info (12128): Elaborating entity "mx_2x1" for hierarchy "switch_six_row_segment:inst15|mx_2x1:inst4"
+Info (12128): Elaborating entity "six_row_segment" for hierarchy "switch_six_row_segment:inst15|six_row_segment:inst"
+Info (12128): Elaborating entity "mx_4bit_2x1" for hierarchy "switch_six_row_segment:inst15|six_row_segment:inst|mx_4bit_2x1:inst6"
+Warning (275011): Block or symbol "AND2" of instance "inst5" overlaps another block or symbol
+Info (12128): Elaborating entity "b2seg_bus" for hierarchy "b2seg_bus:inst17"
+Warning (275011): Block or symbol "AND2" of instance "inst11" overlaps another block or symbol
+Warning (275011): Block or symbol "OR2" of instance "inst19" overlaps another block or symbol
+Warning (275008): Primitive "NOT" of instance "inst" not used
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "COM1" is stuck at VCC
+    Warning (13410): Pin "COM2" is stuck at VCC
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 161 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4842 megabytes
+    Info: Processing ended: Thu Dec 08 20:23:23 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:21
+
+

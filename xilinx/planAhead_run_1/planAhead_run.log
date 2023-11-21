@@ -1,0 +1,182 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2048 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/Desktop/hello/pa.fromHdl.tcl
+# create_project -name hello -dir "/home/ise/Desktop/hello/planAhead_run_1" -part xc6slx45fgg484-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "termProject.ucf" [current_fileset -constrset]
+Adding file '/home/ise/Desktop/hello/termProject.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../../xilinx_project/mx_4bit_2x1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/count_6.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/six_row_segment.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/mx_2x1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/isSame_1bit.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/count_3.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/count_2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/counter_10.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/trigger.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/switch_six_row_segment.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/PNU_CLK_DIV.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/four_bit_equal.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/count_60.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/count_24.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/b2seg_bus.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../../xilinx_project/termProject.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top termProject $srcset
+# add_files [list {termProject.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45fgg484-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/ise/xilinx_project/mx_4bit_2x1.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/count_6.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/six_row_segment.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/mx_2x1.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/isSame_1bit.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/count_3.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/count_2.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/counter_10.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/trigger.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/switch_six_row_segment.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/PNU_CLK_DIV.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/four_bit_equal.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/count_60.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/count_24.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/b2seg_bus.v" into library work
+Analyzing Verilog file "/home/ise/xilinx_project/termProject.v" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx45/fgg484/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/ise/Desktop/hello/termProject.ucf]
+Finished Parsing UCF File [/home/ise/Desktop/hello/termProject.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: c01d63e2
+open_rtl_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2792.883 ; gain = 139.477
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin E6 [get_ports {seg[0]}]
+endgroup
+startgroup
+set_property package_pin E5 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin D5 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin J6 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin H8 [get_ports {seg[5]}]
+endgroup
+startgroup
+set_property package_pin H6 [get_ports {seg[6]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports alr_hour]
+endgroup
+startgroup
+set_property package_pin N1 [get_ports alr_min]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports alr_stop]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin G7 [get_ports COM1]
+endgroup
+startgroup
+set_property package_pin G6 [get_ports COM2]
+endgroup
+startgroup
+set_property package_pin F7 [get_ports COM3]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports COM4]
+endgroup
+startgroup
+set_property package_pin K7 [get_ports COM5]
+endgroup
+startgroup
+set_property package_pin K6 [get_ports COM6]
+endgroup
+startgroup
+set_property package_pin K5 [get_ports COM7]
+endgroup
+startgroup
+set_property package_pin J7 [get_ports COM8]
+endgroup
+startgroup
+set_property package_pin K2 [get_ports hour_up]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports min_up]
+endgroup
+startgroup
+set_property package_pin W15 [get_ports piezo]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports sec_rst]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports switch]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Dec  8 11:02:15 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

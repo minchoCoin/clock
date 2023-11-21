@@ -1,0 +1,34 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 08 11:04:15 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sec_rst" LOCATE = SITE "M1" LEVEL 1;
+COMP "min_up" LOCATE = SITE "M3" LEVEL 1;
+COMP "clk" LOCATE = SITE "AB16" LEVEL 1;
+PIN clk_pin<0> = BEL "clk" PINNAME PAD;
+PIN "clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "switch" LOCATE = SITE "L1" LEVEL 1;
+COMP "COM1" LOCATE = SITE "G7" LEVEL 1;
+COMP "COM2" LOCATE = SITE "G6" LEVEL 1;
+COMP "COM3" LOCATE = SITE "F7" LEVEL 1;
+COMP "COM4" LOCATE = SITE "F5" LEVEL 1;
+COMP "COM5" LOCATE = SITE "K7" LEVEL 1;
+COMP "COM6" LOCATE = SITE "K6" LEVEL 1;
+COMP "COM7" LOCATE = SITE "K5" LEVEL 1;
+COMP "COM8" LOCATE = SITE "J7" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "E6" LEVEL 1;
+COMP "alr_stop" LOCATE = SITE "K3" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "E5" LEVEL 1;
+COMP "piezo" LOCATE = SITE "W15" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "D5" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "D6" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "J6" LEVEL 1;
+COMP "alr_hour" LOCATE = SITE "N3" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "H8" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "H6" LEVEL 1;
+COMP "alr_min" LOCATE = SITE "N1" LEVEL 1;
+COMP "hour_up" LOCATE = SITE "K2" LEVEL 1;
+COMP "rst" LOCATE = SITE "L4" LEVEL 1;
+SCHEMATIC END;
+

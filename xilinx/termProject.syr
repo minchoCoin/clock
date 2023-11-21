@@ -1,0 +1,1512 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: termProject.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "termProject.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "termProject"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-fgg484
+
+---- Source Options
+Top Module Name                    : termProject
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/xilinx_project/mx_4bit_2x1.v" into library work
+Parsing module <mx_4bit_2x1>.
+Analyzing Verilog file "/home/ise/xilinx_project/count_6.v" into library work
+Parsing module <count_6>.
+Analyzing Verilog file "/home/ise/xilinx_project/six_row_segment.v" into library work
+Parsing module <six_row_segment>.
+Analyzing Verilog file "/home/ise/xilinx_project/mx_2x1.v" into library work
+Parsing module <mx_2x1>.
+Analyzing Verilog file "/home/ise/xilinx_project/isSame_1bit.v" into library work
+Parsing module <isSame_1bit>.
+Analyzing Verilog file "/home/ise/xilinx_project/count_3.v" into library work
+Parsing module <count_3>.
+Analyzing Verilog file "/home/ise/xilinx_project/count_2.v" into library work
+Parsing module <count_2>.
+Analyzing Verilog file "/home/ise/xilinx_project/counter_10.v" into library work
+Parsing module <counter_10>.
+Analyzing Verilog file "/home/ise/xilinx_project/trigger.v" into library work
+Parsing module <trigger>.
+Analyzing Verilog file "/home/ise/xilinx_project/switch_six_row_segment.v" into library work
+Parsing module <switch_six_row_segment>.
+Analyzing Verilog file "/home/ise/xilinx_project/PNU_CLK_DIV.v" into library work
+Parsing module <PNU_CLK_DIV>.
+Analyzing Verilog file "/home/ise/xilinx_project/four_bit_equal.v" into library work
+Parsing module <four_bit_equal>.
+Analyzing Verilog file "/home/ise/xilinx_project/count_60.v" into library work
+Parsing module <count_60>.
+Analyzing Verilog file "/home/ise/xilinx_project/count_24.v" into library work
+Parsing module <count_24>.
+Analyzing Verilog file "/home/ise/xilinx_project/b2seg_bus.v" into library work
+Parsing module <b2seg_bus>.
+Analyzing Verilog file "/home/ise/xilinx_project/termProject.v" into library work
+Parsing module <termProject>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <termProject>.
+
+Elaborating module <count_60>.
+
+Elaborating module <count_6>.
+
+Elaborating module <counter_10>.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=3822)>.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_project/PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=1000000)>.
+WARNING:HDLCompiler:413 - "/home/ise/xilinx_project/PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <trigger>.
+
+Elaborating module <switch_six_row_segment>.
+
+Elaborating module <six_row_segment>.
+
+Elaborating module <mx_4bit_2x1>.
+
+Elaborating module <mx_2x1>.
+
+Elaborating module <count_2>.
+
+Elaborating module <b2seg_bus>.
+
+Elaborating module <count_24>.
+
+Elaborating module <count_3>.
+
+Elaborating module <four_bit_equal>.
+
+Elaborating module <isSame_1bit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <termProject>.
+    Related source file is "/home/ise/xilinx_project/termProject.v".
+    Found 1-bit register for signal <DFF_inst63>.
+    Found 1-bit register for signal <DFF_inst60>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <termProject> synthesized.
+
+Synthesizing Unit <count_60>.
+    Related source file is "/home/ise/xilinx_project/count_60.v".
+    Found 1-bit register for signal <DFF_inst4>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <count_60> synthesized.
+
+Synthesizing Unit <count_6>.
+    Related source file is "/home/ise/xilinx_project/count_6.v".
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_19>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_20>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_18>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <count_6> synthesized.
+
+Synthesizing Unit <counter_10>.
+    Related source file is "/home/ise/xilinx_project/counter_10.v".
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_16>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_17>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_18>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_15>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <counter_10> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_1>.
+    Related source file is "/home/ise/xilinx_project/PNU_CLK_DIV.v".
+        cnt_num = 3822
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_5_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_5_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_5_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_1> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_2>.
+    Related source file is "/home/ise/xilinx_project/PNU_CLK_DIV.v".
+        cnt_num = 1000000
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_6_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_PWR_6_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_6_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <PNU_CLK_DIV_2> synthesized.
+
+Synthesizing Unit <trigger>.
+    Related source file is "/home/ise/xilinx_project/trigger.v".
+    Found 1-bit register for signal <DFF_inst3>.
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <trigger> synthesized.
+
+Synthesizing Unit <switch_six_row_segment>.
+    Related source file is "/home/ise/xilinx_project/switch_six_row_segment.v".
+    Summary:
+	no macro.
+Unit <switch_six_row_segment> synthesized.
+
+Synthesizing Unit <six_row_segment>.
+    Related source file is "/home/ise/xilinx_project/six_row_segment.v".
+    Summary:
+	no macro.
+Unit <six_row_segment> synthesized.
+
+Synthesizing Unit <mx_4bit_2x1>.
+    Related source file is "/home/ise/xilinx_project/mx_4bit_2x1.v".
+    Summary:
+	no macro.
+Unit <mx_4bit_2x1> synthesized.
+
+Synthesizing Unit <mx_2x1>.
+    Related source file is "/home/ise/xilinx_project/mx_2x1.v".
+    Summary:
+	no macro.
+Unit <mx_2x1> synthesized.
+
+Synthesizing Unit <count_2>.
+    Related source file is "/home/ise/xilinx_project/count_2.v".
+    Found 1-bit register for signal <DFF_inst>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <count_2> synthesized.
+
+Synthesizing Unit <b2seg_bus>.
+    Related source file is "/home/ise/xilinx_project/b2seg_bus.v".
+    Summary:
+	no macro.
+Unit <b2seg_bus> synthesized.
+
+Synthesizing Unit <count_24>.
+    Related source file is "/home/ise/xilinx_project/count_24.v".
+    Found 1-bit register for signal <DFF_inst16>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <count_24> synthesized.
+
+Synthesizing Unit <count_3>.
+    Related source file is "/home/ise/xilinx_project/count_3.v".
+    Found 1-bit register for signal <SYNTHESIZED_WIRE_5>.
+    Found 1-bit register for signal <DFF_inst>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <count_3> synthesized.
+
+Synthesizing Unit <four_bit_equal>.
+    Related source file is "/home/ise/xilinx_project/four_bit_equal.v".
+    Summary:
+	no macro.
+Unit <four_bit_equal> synthesized.
+
+Synthesizing Unit <isSame_1bit>.
+    Related source file is "/home/ise/xilinx_project/isSame_1bit.v".
+    Summary:
+	no macro.
+Unit <isSame_1bit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 20-bit adder                                          : 2
+# Registers                                            : 66
+ 1-bit register                                        : 64
+ 20-bit register                                       : 2
+# Comparators                                          : 4
+ 20-bit comparator greater                             : 2
+ 20-bit comparator lessequal                           : 2
+# Multiplexers                                         : 3
+ 20-bit 2-to-1 multiplexer                             : 3
+# Xors                                                 : 15
+ 1-bit xor2                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <b2v_inst4> is unconnected in block <b2v_inst1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <b2v_inst> is unconnected in block <b2v_inst5>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <b2v_inst> is unconnected in block <b2v_inst7>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <b2v_inst1> is unconnected in block <b2v_inst7>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <PNU_CLK_DIV_2>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <PNU_CLK_DIV_2> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 20-bit adder                                          : 1
+# Counters                                             : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 84
+ Flip-Flops                                            : 84
+# Comparators                                          : 4
+ 20-bit comparator greater                             : 2
+ 20-bit comparator lessequal                           : 2
+# Multiplexers                                         : 2
+ 20-bit 2-to-1 multiplexer                             : 2
+# Xors                                                 : 15
+ 1-bit xor2                                            : 15
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <termProject> ...
+
+Optimizing unit <PNU_CLK_DIV_1> ...
+
+Optimizing unit <switch_six_row_segment> ...
+
+Optimizing unit <six_row_segment> ...
+
+Optimizing unit <count_6> ...
+
+Optimizing unit <counter_10> ...
+WARNING:Xst:1710 - FF/Latch <b2v_inst11/cnt_19> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_18> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_17> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_16> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_15> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_14> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_13> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b2v_inst11/cnt_12> (without init value) has a constant value of 0 in block <termProject>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <b2v_inst15/b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_18> in Unit <termProject> is equivalent to the following FF/Latch, which will be removed : <b2v_inst15/b2v_inst/b2v_inst/SYNTHESIZED_WIRE_18> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst15/b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19> in Unit <termProject> is equivalent to the following FF/Latch, which will be removed : <b2v_inst15/b2v_inst/b2v_inst/SYNTHESIZED_WIRE_19> 
+INFO:Xst:2261 - The FF/Latch <b2v_inst12/cnt_0> in Unit <termProject> is equivalent to the following FF/Latch, which will be removed : <b2v_inst15/b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block termProject, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : termProject.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 215
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 11
+#      LUT2                        : 30
+#      LUT3                        : 44
+#      LUT4                        : 18
+#      LUT5                        : 18
+#      LUT6                        : 20
+#      MUXCY                       : 30
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 93
+#      FDC                         : 93
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 8
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              93  out of  54576     0%  
+ Number of Slice LUTs:                  149  out of  27288     0%  
+    Number used as Logic:               149  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    155
+   Number with an unused Flip Flop:      62  out of    155    40%  
+   Number with an unused LUT:             6  out of    155     3%  
+   Number of fully used LUT-FF pairs:    87  out of    155    56%  
+   Number of unique control sets:        16
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    316     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------+---------------------------------------------+-------+
+Clock Signal                               | Clock buffer(FF name)                       | Load  |
+-------------------------------------------+---------------------------------------------+-------+
+SYNTHESIZED_WIRE_60(SYNTHESIZED_WIRE_601:O)| NONE(*)(DFF_inst63)                         | 6     |
+b2v_inst12/buff                            | NONE(DFF_inst60)                            | 6     |
+clk                                        | BUFGP                                       | 51    |
+SYNTHESIZED_WIRE_27(b2v_inst48/Dout1:O)    | NONE(*)(b2v_inst37/DFF_inst)                | 1     |
+SYNTHESIZED_WIRE_29(b2v_inst13/Dout1:O)    | NONE(*)(b2v_inst4/DFF_inst4)                | 5     |
+SYNTHESIZED_WIRE_21(SYNTHESIZED_WIRE_211:O)| NONE(*)(b2v_inst2/DFF_inst16)               | 5     |
+SYNTHESIZED_WIRE_24(b2v_inst16/Dout1:O)    | NONE(*)(b2v_inst3/DFF_inst16)               | 5     |
+b2v_inst3/DFF_inst16                       | NONE(b2v_inst3/b2v_inst/DFF_inst)           | 2     |
+b2v_inst2/DFF_inst16                       | NONE(b2v_inst2/b2v_inst/DFF_inst)           | 2     |
+SYNTHESIZED_WIRE_12(b2v_inst47/Dout1:O)    | NONE(*)(b2v_inst15/b2v_inst2/DFF_inst)      | 1     |
+b2v_inst4/DFF_inst4                        | NONE(b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20)| 3     |
+b2v_inst/DFF_inst4                         | NONE(b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20) | 3     |
+b2v_inst1/DFF_inst4                        | NONE(b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20)| 3     |
+-------------------------------------------+---------------------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.587ns (Maximum Frequency: 217.986MHz)
+   Minimum input arrival time before clock: 4.606ns
+   Maximum output required time after clock: 7.408ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNTHESIZED_WIRE_60'
+  Clock period: 2.135ns (frequency: 468.296MHz)
+  Total number of paths / destination ports: 17 / 6
+-------------------------------------------------------------------------
+Delay:               2.135ns (Levels of Logic = 1)
+  Source:            b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Source Clock:      SYNTHESIZED_WIRE_60 rising
+  Destination Clock: SYNTHESIZED_WIRE_60 rising
+
+  Data Path: b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 to b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   0.802  b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 (b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18)
+     INV:I->O              1   0.206   0.579  b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_61_INV_0 (b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_6)
+     FDC:D                     0.102          b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      2.135ns (0.755ns logic, 1.380ns route)
+                                       (35.4% logic, 64.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst12/buff'
+  Clock period: 2.106ns (frequency: 474.721MHz)
+  Total number of paths / destination ports: 17 / 6
+-------------------------------------------------------------------------
+Delay:               2.106ns (Levels of Logic = 1)
+  Source:            b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Source Clock:      b2v_inst12/buff rising
+  Destination Clock: b2v_inst12/buff rising
+
+  Data Path: b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 to b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.447   0.773  b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 (b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18)
+     INV:I->O              1   0.206   0.579  b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_61_INV_0 (b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_6)
+     FDC:D                     0.102          b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      2.106ns (0.755ns logic, 1.352ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.587ns (frequency: 217.986MHz)
+  Total number of paths / destination ports: 6214 / 44
+-------------------------------------------------------------------------
+Delay:               4.587ns (Levels of Logic = 23)
+  Source:            b2v_inst12/cnt_7 (FF)
+  Destination:       b2v_inst12/cnt_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: b2v_inst12/cnt_7 to b2v_inst12/cnt_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.879  b2v_inst12/cnt_7 (b2v_inst12/cnt_7)
+     LUT3:I0->O            3   0.205   0.995  b2v_inst12/cnt[19]_PWR_6_o_LessThan_1_o_inv_inv33 (b2v_inst12/cnt[19]_PWR_6_o_LessThan_1_o_inv_inv32)
+     LUT6:I1->O           10   0.203   0.857  b2v_inst12/cnt[19]_PWR_6_o_LessThan_1_o_inv_inv35_1 (b2v_inst12/cnt[19]_PWR_6_o_LessThan_1_o_inv_inv35)
+     LUT2:I1->O            1   0.205   0.000  b2v_inst12/Mcount_cnt_lut<0> (b2v_inst12/Mcount_cnt_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  b2v_inst12/Mcount_cnt_cy<0> (b2v_inst12/Mcount_cnt_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<1> (b2v_inst12/Mcount_cnt_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<2> (b2v_inst12/Mcount_cnt_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<3> (b2v_inst12/Mcount_cnt_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<4> (b2v_inst12/Mcount_cnt_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<5> (b2v_inst12/Mcount_cnt_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<6> (b2v_inst12/Mcount_cnt_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<7> (b2v_inst12/Mcount_cnt_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<8> (b2v_inst12/Mcount_cnt_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<9> (b2v_inst12/Mcount_cnt_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<10> (b2v_inst12/Mcount_cnt_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<11> (b2v_inst12/Mcount_cnt_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<12> (b2v_inst12/Mcount_cnt_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<13> (b2v_inst12/Mcount_cnt_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<14> (b2v_inst12/Mcount_cnt_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<15> (b2v_inst12/Mcount_cnt_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<16> (b2v_inst12/Mcount_cnt_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  b2v_inst12/Mcount_cnt_cy<17> (b2v_inst12/Mcount_cnt_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  b2v_inst12/Mcount_cnt_cy<18> (b2v_inst12/Mcount_cnt_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  b2v_inst12/Mcount_cnt_xor<19> (b2v_inst12/Mcount_cnt19)
+     FDC:D                     0.102          b2v_inst12/cnt_19
+    ----------------------------------------
+    Total                      4.587ns (1.856ns logic, 2.731ns route)
+                                       (40.5% logic, 59.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNTHESIZED_WIRE_27'
+  Clock period: 1.950ns (frequency: 512.794MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.950ns (Levels of Logic = 1)
+  Source:            b2v_inst37/DFF_inst (FF)
+  Destination:       b2v_inst37/DFF_inst (FF)
+  Source Clock:      SYNTHESIZED_WIRE_27 rising
+  Destination Clock: SYNTHESIZED_WIRE_27 rising
+
+  Data Path: b2v_inst37/DFF_inst to b2v_inst37/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  b2v_inst37/DFF_inst (b2v_inst37/DFF_inst)
+     INV:I->O              1   0.206   0.579  b2v_inst37/SYNTHESIZED_WIRE_01_INV_0 (b2v_inst37/SYNTHESIZED_WIRE_0)
+     FDC:D                     0.102          b2v_inst37/DFF_inst
+    ----------------------------------------
+    Total                      1.950ns (0.755ns logic, 1.195ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNTHESIZED_WIRE_29'
+  Clock period: 2.106ns (frequency: 474.721MHz)
+  Total number of paths / destination ports: 15 / 5
+-------------------------------------------------------------------------
+Delay:               2.106ns (Levels of Logic = 1)
+  Source:            b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Source Clock:      SYNTHESIZED_WIRE_29 rising
+  Destination Clock: SYNTHESIZED_WIRE_29 rising
+
+  Data Path: b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 to b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.447   0.773  b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 (b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18)
+     INV:I->O              1   0.206   0.579  b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_61_INV_0 (b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_6)
+     FDC:D                     0.102          b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      2.106ns (0.755ns logic, 1.352ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNTHESIZED_WIRE_21'
+  Clock period: 3.457ns (frequency: 289.239MHz)
+  Total number of paths / destination ports: 31 / 9
+-------------------------------------------------------------------------
+Delay:               3.457ns (Levels of Logic = 2)
+  Source:            b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15 (FF)
+  Destination:       b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15 (FF)
+  Source Clock:      SYNTHESIZED_WIRE_21 rising
+  Destination Clock: SYNTHESIZED_WIRE_21 rising
+
+  Data Path: b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15 to b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.745  b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15 (b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15)
+     LUT2:I1->O            1   0.205   0.684  b2v_inst2/SYNTHESIZED_WIRE_0_SW0 (N2)
+     LUT6:I4->O            6   0.203   0.744  b2v_inst2/b2v_inst/rst_inv1 (b2v_inst2/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      3.457ns (1.285ns logic, 2.172ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNTHESIZED_WIRE_24'
+  Clock period: 3.457ns (frequency: 289.239MHz)
+  Total number of paths / destination ports: 31 / 9
+-------------------------------------------------------------------------
+Delay:               3.457ns (Levels of Logic = 2)
+  Source:            b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15 (FF)
+  Destination:       b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15 (FF)
+  Source Clock:      SYNTHESIZED_WIRE_24 rising
+  Destination Clock: SYNTHESIZED_WIRE_24 rising
+
+  Data Path: b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15 to b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.745  b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15 (b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15)
+     LUT2:I1->O            1   0.205   0.684  b2v_inst3/SYNTHESIZED_WIRE_0_SW0 (N4)
+     LUT6:I4->O            6   0.203   0.744  b2v_inst3/b2v_inst/rst_inv1 (b2v_inst3/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      3.457ns (1.285ns logic, 2.172ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst3/DFF_inst16'
+  Clock period: 3.530ns (frequency: 283.318MHz)
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Delay:               3.530ns (Levels of Logic = 2)
+  Source:            b2v_inst3/b2v_inst/SYNTHESIZED_WIRE_5 (FF)
+  Destination:       b2v_inst3/b2v_inst/DFF_inst (FF)
+  Source Clock:      b2v_inst3/DFF_inst16 rising
+  Destination Clock: b2v_inst3/DFF_inst16 rising
+
+  Data Path: b2v_inst3/b2v_inst/SYNTHESIZED_WIRE_5 to b2v_inst3/b2v_inst/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.819  b2v_inst3/b2v_inst/SYNTHESIZED_WIRE_5 (b2v_inst3/b2v_inst/SYNTHESIZED_WIRE_5)
+     LUT2:I0->O            1   0.203   0.684  b2v_inst3/SYNTHESIZED_WIRE_0_SW0 (N4)
+     LUT6:I4->O            6   0.203   0.744  b2v_inst3/b2v_inst/rst_inv1 (b2v_inst3/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst3/b2v_inst/SYNTHESIZED_WIRE_5
+    ----------------------------------------
+    Total                      3.530ns (1.283ns logic, 2.247ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst2/DFF_inst16'
+  Clock period: 3.530ns (frequency: 283.318MHz)
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Delay:               3.530ns (Levels of Logic = 2)
+  Source:            b2v_inst2/b2v_inst/SYNTHESIZED_WIRE_5 (FF)
+  Destination:       b2v_inst2/b2v_inst/DFF_inst (FF)
+  Source Clock:      b2v_inst2/DFF_inst16 rising
+  Destination Clock: b2v_inst2/DFF_inst16 rising
+
+  Data Path: b2v_inst2/b2v_inst/SYNTHESIZED_WIRE_5 to b2v_inst2/b2v_inst/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.819  b2v_inst2/b2v_inst/SYNTHESIZED_WIRE_5 (b2v_inst2/b2v_inst/SYNTHESIZED_WIRE_5)
+     LUT2:I0->O            1   0.203   0.684  b2v_inst2/SYNTHESIZED_WIRE_0_SW0 (N2)
+     LUT6:I4->O            6   0.203   0.744  b2v_inst2/b2v_inst/rst_inv1 (b2v_inst2/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst2/b2v_inst/SYNTHESIZED_WIRE_5
+    ----------------------------------------
+    Total                      3.530ns (1.283ns logic, 2.247ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYNTHESIZED_WIRE_12'
+  Clock period: 2.216ns (frequency: 451.233MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.216ns (Levels of Logic = 1)
+  Source:            b2v_inst15/b2v_inst2/DFF_inst (FF)
+  Destination:       b2v_inst15/b2v_inst2/DFF_inst (FF)
+  Source Clock:      SYNTHESIZED_WIRE_12 rising
+  Destination Clock: SYNTHESIZED_WIRE_12 rising
+
+  Data Path: b2v_inst15/b2v_inst2/DFF_inst to b2v_inst15/b2v_inst2/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   0.882  b2v_inst15/b2v_inst2/DFF_inst (b2v_inst15/b2v_inst2/DFF_inst)
+     INV:I->O              1   0.206   0.579  b2v_inst15/b2v_inst2/SYNTHESIZED_WIRE_01_INV_0 (b2v_inst15/b2v_inst2/SYNTHESIZED_WIRE_0)
+     FDC:D                     0.102          b2v_inst15/b2v_inst2/DFF_inst
+    ----------------------------------------
+    Total                      2.216ns (0.755ns logic, 1.461ns route)
+                                       (34.1% logic, 65.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst4/DFF_inst4'
+  Clock period: 1.697ns (frequency: 589.275MHz)
+  Total number of paths / destination ports: 9 / 3
+-------------------------------------------------------------------------
+Delay:               1.697ns (Levels of Logic = 1)
+  Source:            b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Destination:       b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Source Clock:      b2v_inst4/DFF_inst4 rising
+  Destination Clock: b2v_inst4/DFF_inst4 rising
+
+  Data Path: b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20 to b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.943  b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20 (b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20)
+     LUT3:I0->O            1   0.205   0.000  b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_41 (b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_4)
+     FDC:D                     0.102          b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20
+    ----------------------------------------
+    Total                      1.697ns (0.754ns logic, 0.943ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst/DFF_inst4'
+  Clock period: 1.697ns (frequency: 589.275MHz)
+  Total number of paths / destination ports: 9 / 3
+-------------------------------------------------------------------------
+Delay:               1.697ns (Levels of Logic = 1)
+  Source:            b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Destination:       b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Source Clock:      b2v_inst/DFF_inst4 rising
+  Destination Clock: b2v_inst/DFF_inst4 rising
+
+  Data Path: b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20 to b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.943  b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20 (b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20)
+     LUT3:I0->O            1   0.205   0.000  b2v_inst/b2v_inst/SYNTHESIZED_WIRE_41 (b2v_inst/b2v_inst/SYNTHESIZED_WIRE_4)
+     FDC:D                     0.102          b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20
+    ----------------------------------------
+    Total                      1.697ns (0.754ns logic, 0.943ns route)
+                                       (44.4% logic, 55.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b2v_inst1/DFF_inst4'
+  Clock period: 1.727ns (frequency: 579.123MHz)
+  Total number of paths / destination ports: 9 / 3
+-------------------------------------------------------------------------
+Delay:               1.727ns (Levels of Logic = 1)
+  Source:            b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Destination:       b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Source Clock:      b2v_inst1/DFF_inst4 rising
+  Destination Clock: b2v_inst1/DFF_inst4 rising
+
+  Data Path: b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20 to b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.973  b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20 (b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20)
+     LUT3:I0->O            1   0.205   0.000  b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_41 (b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_4)
+     FDC:D                     0.102          b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20
+    ----------------------------------------
+    Total                      1.727ns (0.754ns logic, 0.973ns route)
+                                       (43.7% logic, 56.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYNTHESIZED_WIRE_60'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       DFF_inst63 (FF)
+  Destination Clock: SYNTHESIZED_WIRE_60 rising
+
+  Data Path: rst to DFF_inst63
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst1/DFF_inst4
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst12/buff'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.606ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst/DFF_inst4 (FF)
+  Destination Clock: b2v_inst12/buff rising
+
+  Data Path: rst to b2v_inst/DFF_inst4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.947  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     LUT3:I0->O            8   0.205   0.802  b2v_inst/rst_inv1 (b2v_inst/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst/DFF_inst4
+    ----------------------------------------
+    Total                      4.606ns (1.857ns logic, 2.749ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 58 / 58
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst47/DFF_inst3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to b2v_inst47/DFF_inst3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst48/SYNTHESIZED_WIRE_1
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYNTHESIZED_WIRE_27'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst37/DFF_inst (FF)
+  Destination Clock: SYNTHESIZED_WIRE_27 rising
+
+  Data Path: rst to b2v_inst37/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst37/DFF_inst
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYNTHESIZED_WIRE_29'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst4/DFF_inst4 (FF)
+  Destination Clock: SYNTHESIZED_WIRE_29 rising
+
+  Data Path: rst to b2v_inst4/DFF_inst4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst4/DFF_inst4
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYNTHESIZED_WIRE_21'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.320ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15 (FF)
+  Destination Clock: SYNTHESIZED_WIRE_21 rising
+
+  Data Path: rst to b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.719  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     LUT6:I5->O            6   0.205   0.744  b2v_inst2/b2v_inst/rst_inv1 (b2v_inst2/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      4.320ns (1.857ns logic, 2.463ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYNTHESIZED_WIRE_24'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.320ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15 (FF)
+  Destination Clock: SYNTHESIZED_WIRE_24 rising
+
+  Data Path: rst to b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.719  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     LUT6:I5->O            6   0.205   0.744  b2v_inst3/b2v_inst/rst_inv1 (b2v_inst3/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      4.320ns (1.857ns logic, 2.463ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst3/DFF_inst16'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.320ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst3/b2v_inst/DFF_inst (FF)
+  Destination Clock: b2v_inst3/DFF_inst16 rising
+
+  Data Path: rst to b2v_inst3/b2v_inst/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.719  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     LUT6:I5->O            6   0.205   0.744  b2v_inst3/b2v_inst/rst_inv1 (b2v_inst3/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst3/b2v_inst/SYNTHESIZED_WIRE_5
+    ----------------------------------------
+    Total                      4.320ns (1.857ns logic, 2.463ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst2/DFF_inst16'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.320ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst2/b2v_inst/DFF_inst (FF)
+  Destination Clock: b2v_inst2/DFF_inst16 rising
+
+  Data Path: rst to b2v_inst2/b2v_inst/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.719  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     LUT6:I5->O            6   0.205   0.744  b2v_inst2/b2v_inst/rst_inv1 (b2v_inst2/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst2/b2v_inst/SYNTHESIZED_WIRE_5
+    ----------------------------------------
+    Total                      4.320ns (1.857ns logic, 2.463ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYNTHESIZED_WIRE_12'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst15/b2v_inst2/DFF_inst (FF)
+  Destination Clock: SYNTHESIZED_WIRE_12 rising
+
+  Data Path: rst to b2v_inst15/b2v_inst2/DFF_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst15/b2v_inst2/DFF_inst
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst4/DFF_inst4'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Destination Clock: b2v_inst4/DFF_inst4 rising
+
+  Data Path: rst to b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst/DFF_inst4'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.606ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Destination Clock: b2v_inst/DFF_inst4 rising
+
+  Data Path: rst to b2v_inst/b2v_inst/SYNTHESIZED_WIRE_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.947  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     LUT3:I0->O            8   0.205   0.802  b2v_inst/rst_inv1 (b2v_inst/b2v_inst/rst_inv)
+     FDC:CLR                   0.430          b2v_inst/b2v_inst/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      4.606ns (1.857ns logic, 2.749ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'b2v_inst1/DFF_inst4'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.370ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20 (FF)
+  Destination Clock: b2v_inst1/DFF_inst4 rising
+
+  Data Path: rst to b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            76   1.222   1.718  rst_IBUF (SYNTHESIZED_WIRE_61_inv)
+     FDC:CLR                   0.430          b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_18
+    ----------------------------------------
+    Total                      3.370ns (1.652ns logic, 1.718ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 189 / 14
+-------------------------------------------------------------------------
+Offset:              7.408ns (Levels of Logic = 4)
+  Source:            b2v_inst15/b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19 (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: b2v_inst15/b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19 to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.447   1.372  b2v_inst15/b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19 (b2v_inst15/b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19)
+     LUT6:I1->O            1   0.203   0.808  b2v_inst15/b2v_inst3/m_line<1>1 (b2v_inst15/b2v_inst3/m_line<1>)
+     LUT5:I2->O            7   0.205   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      7.408ns (3.629ns logic, 3.779ns route)
+                                       (49.0% logic, 51.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst/DFF_inst4'
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Offset:              6.627ns (Levels of Logic = 4)
+  Source:            b2v_inst/b2v_inst/SYNTHESIZED_WIRE_19 (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      b2v_inst/DFF_inst4 rising
+
+  Data Path: b2v_inst/b2v_inst/SYNTHESIZED_WIRE_19 to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.819  b2v_inst/b2v_inst/SYNTHESIZED_WIRE_19 (b2v_inst/b2v_inst/SYNTHESIZED_WIRE_19)
+     LUT3:I1->O            1   0.203   0.580  b2v_inst15/b2v_inst3/m_line<1>3 (b2v_inst15/b2v_inst3/m_line<1>2)
+     LUT5:I4->O            7   0.205   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      6.627ns (3.629ns logic, 2.998ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst12/buff'
+  Total number of paths / destination ports: 25 / 7
+-------------------------------------------------------------------------
+Offset:              6.567ns (Levels of Logic = 4)
+  Source:            b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      b2v_inst12/buff rising
+
+  Data Path: b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.447   0.774  b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18 (b2v_inst/b2v_inst2/SYNTHESIZED_WIRE_18)
+     LUT3:I2->O            1   0.205   0.580  b2v_inst15/b2v_inst3/m_line<0>3 (b2v_inst15/b2v_inst3/m_line<0>2)
+     LUT5:I4->O            7   0.205   1.002  b2v_inst15/b2v_inst3/m_line<0>4 (SYNTHESIZED_WIRE_20<0>)
+     LUT3:I0->O            1   0.205   0.579  b2v_inst17/b1 (seg_1_OBUF)
+     OBUF:I->O                 2.571          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                      6.567ns (3.633ns logic, 2.934ns route)
+                                       (55.3% logic, 44.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNTHESIZED_WIRE_21'
+  Total number of paths / destination ports: 25 / 7
+-------------------------------------------------------------------------
+Offset:              6.943ns (Levels of Logic = 4)
+  Source:            b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      SYNTHESIZED_WIRE_21 rising
+
+  Data Path: b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_18 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.050  b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_18 (b2v_inst2/b2v_inst1/SYNTHESIZED_WIRE_18)
+     LUT6:I2->O            1   0.203   0.684  b2v_inst15/b2v_inst3/m_line<0>2 (b2v_inst15/b2v_inst3/m_line<0>1)
+     LUT5:I3->O            7   0.203   1.002  b2v_inst15/b2v_inst3/m_line<0>4 (SYNTHESIZED_WIRE_20<0>)
+     LUT3:I0->O            1   0.205   0.579  b2v_inst17/b1 (seg_1_OBUF)
+     OBUF:I->O                 2.571          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                      6.943ns (3.629ns logic, 3.314ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNTHESIZED_WIRE_60'
+  Total number of paths / destination ports: 25 / 7
+-------------------------------------------------------------------------
+Offset:              6.926ns (Levels of Logic = 4)
+  Source:            b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      SYNTHESIZED_WIRE_60 rising
+
+  Data Path: b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.031  b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18 (b2v_inst1/b2v_inst2/SYNTHESIZED_WIRE_18)
+     LUT6:I3->O            1   0.205   0.684  b2v_inst15/b2v_inst3/m_line<0>2 (b2v_inst15/b2v_inst3/m_line<0>1)
+     LUT5:I3->O            7   0.203   1.002  b2v_inst15/b2v_inst3/m_line<0>4 (SYNTHESIZED_WIRE_20<0>)
+     LUT3:I0->O            1   0.205   0.579  b2v_inst17/b1 (seg_1_OBUF)
+     OBUF:I->O                 2.571          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                      6.926ns (3.631ns logic, 3.295ns route)
+                                       (52.4% logic, 47.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst1/DFF_inst4'
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Offset:              6.759ns (Levels of Logic = 4)
+  Source:            b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19 (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      b2v_inst1/DFF_inst4 rising
+
+  Data Path: b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19 to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.849  b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19 (b2v_inst1/b2v_inst/SYNTHESIZED_WIRE_19)
+     LUT6:I4->O            1   0.203   0.684  b2v_inst15/b2v_inst3/m_line<1>2 (b2v_inst15/b2v_inst3/m_line<1>1)
+     LUT5:I3->O            7   0.203   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      6.759ns (3.627ns logic, 3.132ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNTHESIZED_WIRE_24'
+  Total number of paths / destination ports: 25 / 7
+-------------------------------------------------------------------------
+Offset:              7.069ns (Levels of Logic = 4)
+  Source:            b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      SYNTHESIZED_WIRE_24 rising
+
+  Data Path: b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_18 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.050  b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_18 (b2v_inst3/b2v_inst1/SYNTHESIZED_WIRE_18)
+     LUT6:I2->O            1   0.203   0.808  b2v_inst15/b2v_inst3/m_line<0>1 (b2v_inst15/b2v_inst3/m_line<0>)
+     LUT5:I2->O            7   0.205   1.002  b2v_inst15/b2v_inst3/m_line<0>4 (SYNTHESIZED_WIRE_20<0>)
+     LUT3:I0->O            1   0.205   0.579  b2v_inst17/b1 (seg_1_OBUF)
+     OBUF:I->O                 2.571          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                      7.069ns (3.631ns logic, 3.438ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNTHESIZED_WIRE_29'
+  Total number of paths / destination ports: 25 / 7
+-------------------------------------------------------------------------
+Offset:              7.023ns (Levels of Logic = 4)
+  Source:            b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 (FF)
+  Destination:       seg<6> (PAD)
+  Source Clock:      SYNTHESIZED_WIRE_29 rising
+
+  Data Path: b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 to seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.447   1.002  b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18 (b2v_inst4/b2v_inst2/SYNTHESIZED_WIRE_18)
+     LUT6:I3->O            1   0.205   0.808  b2v_inst15/b2v_inst3/m_line<0>1 (b2v_inst15/b2v_inst3/m_line<0>)
+     LUT5:I2->O            7   0.205   1.002  b2v_inst15/b2v_inst3/m_line<0>4 (SYNTHESIZED_WIRE_20<0>)
+     LUT3:I0->O            1   0.205   0.579  b2v_inst17/b1 (seg_1_OBUF)
+     OBUF:I->O                 2.571          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                      7.023ns (3.633ns logic, 3.390ns route)
+                                       (51.7% logic, 48.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst4/DFF_inst4'
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Offset:              6.855ns (Levels of Logic = 4)
+  Source:            b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_19 (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      b2v_inst4/DFF_inst4 rising
+
+  Data Path: b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_19 to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.819  b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_19 (b2v_inst4/b2v_inst/SYNTHESIZED_WIRE_19)
+     LUT6:I4->O            1   0.203   0.808  b2v_inst15/b2v_inst3/m_line<1>1 (b2v_inst15/b2v_inst3/m_line<1>)
+     LUT5:I2->O            7   0.205   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      6.855ns (3.629ns logic, 3.226ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYNTHESIZED_WIRE_12'
+  Total number of paths / destination ports: 31 / 13
+-------------------------------------------------------------------------
+Offset:              6.154ns (Levels of Logic = 3)
+  Source:            b2v_inst15/b2v_inst2/DFF_inst (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      SYNTHESIZED_WIRE_12 rising
+
+  Data Path: b2v_inst15/b2v_inst2/DFF_inst to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   1.130  b2v_inst15/b2v_inst2/DFF_inst (b2v_inst15/b2v_inst2/DFF_inst)
+     LUT5:I1->O            7   0.203   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      6.154ns (3.424ns logic, 2.730ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst3/DFF_inst16'
+  Total number of paths / destination ports: 14 / 7
+-------------------------------------------------------------------------
+Offset:              6.753ns (Levels of Logic = 4)
+  Source:            b2v_inst3/b2v_inst/DFF_inst (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      b2v_inst3/DFF_inst16 rising
+
+  Data Path: b2v_inst3/b2v_inst/DFF_inst to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.715  b2v_inst3/b2v_inst/DFF_inst (b2v_inst3/b2v_inst/DFF_inst)
+     LUT6:I5->O            1   0.205   0.808  b2v_inst15/b2v_inst3/m_line<1>1 (b2v_inst15/b2v_inst3/m_line<1>)
+     LUT5:I2->O            7   0.205   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      6.753ns (3.631ns logic, 3.122ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'b2v_inst2/DFF_inst16'
+  Total number of paths / destination ports: 14 / 7
+-------------------------------------------------------------------------
+Offset:              6.627ns (Levels of Logic = 4)
+  Source:            b2v_inst2/b2v_inst/DFF_inst (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      b2v_inst2/DFF_inst16 rising
+
+  Data Path: b2v_inst2/b2v_inst/DFF_inst to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.715  b2v_inst2/b2v_inst/DFF_inst (b2v_inst2/b2v_inst/DFF_inst)
+     LUT6:I5->O            1   0.205   0.684  b2v_inst15/b2v_inst3/m_line<1>2 (b2v_inst15/b2v_inst3/m_line<1>1)
+     LUT5:I3->O            7   0.203   1.021  b2v_inst15/b2v_inst3/m_line<1>4 (SYNTHESIZED_WIRE_20<1>)
+     LUT4:I0->O            1   0.203   0.579  b2v_inst17/a1 (seg_0_OBUF)
+     OBUF:I->O                 2.571          seg_0_OBUF (seg<0>)
+    ----------------------------------------
+    Total                      6.627ns (3.629ns logic, 2.998ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SYNTHESIZED_WIRE_12
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_12|    2.216|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYNTHESIZED_WIRE_21
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_21 |    3.457|         |         |         |
+b2v_inst2/DFF_inst16|    3.530|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYNTHESIZED_WIRE_24
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_24 |    3.457|         |         |         |
+b2v_inst3/DFF_inst16|    3.530|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYNTHESIZED_WIRE_27
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_27|    1.950|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYNTHESIZED_WIRE_29
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_29|    2.106|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SYNTHESIZED_WIRE_60
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_60|    2.135|         |         |         |
+b2v_inst1/DFF_inst4|    1.841|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst/DFF_inst4
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+b2v_inst/DFF_inst4|    1.697|         |         |         |
+clk               |    2.603|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst1/DFF_inst4
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+b2v_inst1/DFF_inst4|    1.727|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst12/buff
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+b2v_inst/DFF_inst4|    1.811|         |         |         |
+b2v_inst12/buff   |    2.106|         |         |         |
+clk               |    2.603|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst2/DFF_inst16
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_21 |    3.457|         |         |         |
+b2v_inst2/DFF_inst16|    3.530|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst3/DFF_inst16
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_24 |    3.457|         |         |         |
+b2v_inst3/DFF_inst16|    3.530|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b2v_inst4/DFF_inst4
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+b2v_inst4/DFF_inst4|    1.697|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+SYNTHESIZED_WIRE_21 |    7.022|         |         |         |
+SYNTHESIZED_WIRE_24 |    7.039|         |         |         |
+SYNTHESIZED_WIRE_27 |    3.075|         |         |         |
+SYNTHESIZED_WIRE_29 |    7.077|         |         |         |
+SYNTHESIZED_WIRE_60 |    7.127|         |         |         |
+b2v_inst1/DFF_inst4 |    4.752|         |         |         |
+b2v_inst2/DFF_inst16|    6.735|         |         |         |
+b2v_inst3/DFF_inst16|    6.837|         |         |         |
+b2v_inst4/DFF_inst4 |    4.625|         |         |         |
+clk                 |    4.587|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.01 secs
+ 
+--> 
+
+
+Total memory usage is 386712 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

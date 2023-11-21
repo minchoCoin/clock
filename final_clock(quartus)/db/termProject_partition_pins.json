@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "piezo",
+					"strict" : false
+				},
+				{
+					"name" : "COM3",
+					"strict" : false
+				},
+				{
+					"name" : "COM4",
+					"strict" : false
+				},
+				{
+					"name" : "COM5",
+					"strict" : false
+				},
+				{
+					"name" : "COM6",
+					"strict" : false
+				},
+				{
+					"name" : "COM7",
+					"strict" : false
+				},
+				{
+					"name" : "COM8",
+					"strict" : false
+				},
+				{
+					"name" : "seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "sec_rst",
+					"strict" : false
+				},
+				{
+					"name" : "alr_hour",
+					"strict" : false
+				},
+				{
+					"name" : "alr_min",
+					"strict" : false
+				},
+				{
+					"name" : "hour_up",
+					"strict" : false
+				},
+				{
+					"name" : "min_up",
+					"strict" : false
+				},
+				{
+					"name" : "switch",
+					"strict" : false
+				},
+				{
+					"name" : "alr_stop",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

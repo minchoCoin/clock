@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Desktop/hello/termProject.ncd
+OUTFILE=/home/ise/Desktop/hello/termProject.bit
+FAMILY=Spartan6
+PART=xc6slx45-3fgg484
+WORKINGDIR=/home/ise/Desktop/hello
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620
